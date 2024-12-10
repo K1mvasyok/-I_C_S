@@ -3,11 +3,6 @@ from lab3.reversi import ReversiGame
 
 class MiniMaxBot:
     def __init__(self, player, depth=3):
-        """
-        Инициализация бота.
-        :param player: 'X' или 'O' — за кого играет бот.
-        :param depth: Глубина поиска Minimax.
-        """
         self.player = player
         self.opponent = 'X' if player == 'O' else 'O'
         self.depth = depth
